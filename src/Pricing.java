@@ -7,4 +7,12 @@ public class Pricing {
 		
 		return amountOfThings * 17;
 	}
+	
+	public int getAnotherPrice(int amountOfThings){
+		if ( amountOfThings == 5 ){
+			return amountOfThings * 10;
+		}
+		
+		return amountOfThings * 5;
+	}
 }

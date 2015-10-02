@@ -27,4 +27,19 @@ public class PricingTests {
 		int amount = 1;
 		assertEquals(15, pricing.getPrice(amount, true));		
 	}
+	
+	@Test
+	public void testGetAnotherPriceWithAnAmountDifferentThan5Items(){
+		Pricing pricing = new Pricing();
+		int amount = 10;
+		assertEquals(50, pricing.getAnotherPrice(amount));
+	}
+	
+	@Test
+	public void testGetAnotherPriceWithAmountOf5(){
+		Pricing pricing = new Pricing();
+		
+		int amount = 5;
+		assertEquals(50, pricing.getAnotherPrice(amount));
+	}
 }
